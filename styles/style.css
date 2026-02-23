@@ -43,6 +43,7 @@ div {
     background-color:rgb(93, 93, 93); 
     border-radius: 50%;
     position: absolute;
+    border: black 2px solid;
 }
 
 #ojoIzq {
