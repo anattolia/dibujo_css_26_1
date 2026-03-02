@@ -32,9 +32,15 @@ div {
 #cara {
     width: 60%;
     height: 70%;
-    background-color:rgb(232, 202, 186);
+    background-color:rgb(238, 231, 87);
     border-radius: 50%;
     position: relative;
+    transition: all 4s;
+}
+
+#cara:hover {
+    transform: rotate(360deg) scale(0.5);
+    background-color:rgb(246, 246, 235);
 }
 
 .ojos {
@@ -55,3 +61,29 @@ div {
  top: 20%;
  right: 20%;
 }
+
+#boca {
+    width: 8%;
+    height: 12%;
+    border-radius: 0 0 100% 100%;
+    position: absolute;
+    top: 40%;
+    box-align: center; 
+    border: rgb(216, 156, 166) 2px solid;
+    animation-name: cambioColor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambioColor {
+   0%   {background-color: rgb(239, 228, 19); height: 0%}
+  25%  {background-color: rgb(36, 234, 22); }
+  50%  {background-color: rgb(0, 153, 255); }
+  100% {background-color: rgb(255, 220, 24); height: 20%}
+}
+
+/*
+#boca:hover {
+    background-color:rgb(223, 23, 23);
+    height: 18%;
+}*/
